@@ -7,10 +7,10 @@ from agent_data import get_agent_data
 
 if __name__=='__main__':
 
-    image_file1=r'resources\image.jpeg'
-    image_file2=r'resources\image2.jpeg'
-    image_url1 = "https://i.postimg.cc/rpzNHBBk/somya-image-small.jpg"
-    image_url2 = "https://i.postimg.cc/C5NV2n8d/somya-PAN.jpg"
+    image_file1=r''
+    image_file2=r''
+    image_url1 = ""
+    image_url2 = ""
     # read_text(image_file1)
     # agent_data_list=[]
     agent_data={}
