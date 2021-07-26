@@ -18,16 +18,6 @@ if __name__=='__main__':
     #PAN Card data
     pan_data = read_text(image_file2)
 
-    # for d in agent_data_list:
-    #     for k, v in d.items():
-    #         agent_data.setdefault(k, []).append(v)
-    # agent_data.update(pan_data)
-    # agent_data.update(aadhar_data)
-
-    # print(agent_data)
-    # print(pan_data)
-    # print(aadhar_data)
-
     # Similarity between the images
     confidence = face_comparing(image_url1, image_url2)
     print(confidence)
@@ -40,9 +30,9 @@ if __name__=='__main__':
             agent_data[key]="Ok"
         else:
             agent_data[key]=[pan_data[key], aadhar_data[key], "No"]
+            
     agent_data["Confidence"] = confidence
     
     # print(agent_data)
-
     df=pd.DataFrame(agent_data)
     print(df)
