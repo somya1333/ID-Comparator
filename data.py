@@ -8,18 +8,27 @@ from google.cloud import vision
 credential_path = r'C:\Users\ACER\Desktop\vision api\client.json' 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
+name = "NAME"
+DOB = "DOB"
+gaurdian_name = "FATHER'S NAME"
+gender = "GENDER"
+mobile = "MOBILE"
+PAN = "PERMANENT ACCOUNT NUMBER CARD"
+aadhar = "AADHAR NO"
+DL_number = "DLNUMBER"
+
 search_data = [
-    name = "NAME",
-    DOB = "DOB",
-    gaurdian_name = "FATHER'S NAME",
-    gender = "GENDER",
-    mobile = "MOBILE",
+    name,
+    DOB,
+    gaurdian_name,
+    gender,
+    mobile
 ]
 
 search_type = [
-    PAN = "PERMANENT ACCOUNT NUMBER CARD",
-    aadhar = "AADHAR NO",
-    DL_number = "DLNUMBER"
+    PAN,
+    aadhar ,
+    DL_number
 ]
 
 
